@@ -22,7 +22,7 @@ def index():
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM bmiData')
     result = cursor.fetchall()
-    return render_template('index.html', title='Home', user=user, hw=result)
+    return render_template('index.html', title='Home', user=user, hws=result)
 
 
 @app.route('/view/<int:hw_id>', methods=['GET'])
