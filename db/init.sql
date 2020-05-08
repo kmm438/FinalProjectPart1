@@ -1,9 +1,12 @@
-CREATE TABLE IF NOT EXISTS hw_200 (
+CREATE DATABASE bmiData;
+use bmiData;
+
+CREATE TABLE IF NOT EXISTS bmiData (
     `Index` INT,
     `Height_Inches` NUMERIC(4, 2),
     `Weight_Pounds` NUMERIC(6, 3)
 );
-INSERT INTO hw_200 VALUES
+INSERT INTO bmiData VALUES
     (1, 65.78, 112.99),
     (2, 71.52, 136.49),
     (3, 69.40, 153.03),
